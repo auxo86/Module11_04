@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SessionDemo</title>
+</head>
+<body>
+    <div>
+        @*在本例中，因為session存到Asp.Net State Service中，
+        所以重啟網站，並不會造成session重算*@
+        <h1>SessionDemo...</h1>
+        
+        SessionID = @Session.SessionID <br />
+        Session = @Session["count"] <br />
+
+    </div>
+</body>
+</html>
